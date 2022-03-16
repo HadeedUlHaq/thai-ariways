@@ -1,0 +1,207 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #3d1a6e;
+  font-family: Arial, Helvetica, sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 7fr 1fr;
+      grid-template-columns: 1fr 7fr 1fr;
+  border-bottom: 3px solid #ffcb08;
+  /* Create three equal columns that floats next to each other */
+  /* Clear floats after the columns */
+}
+
+.header a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+}
+
+.header .downnav {
+  z-index: 26 !important;
+  float: left;
+  overflow: hidden;
+}
+
+.header .downnav .dropbtn {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 0px;
+  background-color: inherit;
+  margin: 0;
+  cursor: pointer;
+  margin: 0px 12px;
+  position: relative;
+}
+
+.header .downnav .dropbtn::after {
+  z-index: 26 !important;
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 0%;
+  height: 2px;
+  background: #ffcb08;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .downnav .dropbtn:hover::after {
+  z-index: 26 !important;
+  width: 100%;
+}
+
+.header .header a:hover,
+.header .downnav:hover .dropbtn {
+  z-index: 26 !important;
+  color: #ffcb08;
+}
+
+.header .downnav:hover .dropbtn {
+  z-index: 26 !important;
+  position: relative;
+}
+
+.header .downnav:hover .dropbtn::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #ffcb08;
+}
+
+.header .downnav-content {
+  z-index: 26 !important;
+  display: none;
+  position: absolute;
+  background-color: #3d1a6e;
+  width: 100%;
+  left: 0;
+  z-index: 9;
+  border-bottom: 3px solid #ffcb08;
+}
+
+.header .downnav-content .header {
+  background: #3d1a6e;
+  padding: 16px;
+  color: white;
+}
+
+.header .downnav:hover .downnav-content {
+  display: block;
+}
+
+.header .row {
+  width: 86%;
+  margin: auto;
+  padding: 20px 0px 0px;
+}
+
+.header .column {
+  float: left;
+  width: 70%;
+  padding: 20px 0px;
+  background-color: #3d1a6e;
+}
+
+.header .columns {
+  float: left;
+  width: 30%;
+  background-color: #3d1a6e;
+}
+
+.header .columns img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header .column ul {
+  position: relative;
+}
+
+.header .column ul ul {
+  width: 34vw;
+  position: absolute;
+  top: 0%;
+  right: 10px;
+  display: none;
+  height: 400px;
+}
+
+.header .column ul ul > li {
+  padding: 02px 2px;
+}
+
+.header .column ul ul > li a {
+  font-size: 14px;
+}
+
+.header .column ul li {
+  color: #fff;
+  padding: 10px 2px;
+  text-decoration: none;
+  display: -ms-grid;
+  display: grid;
+  text-align: left;
+  border-left: 1px solid #311559;
+  margin-left: 0px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.header .column ul li a {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+}
+
+.header .column ul li a::before {
+  position: absolute;
+  content: " ";
+  top: 0px;
+  left: -4px;
+  height: 0%;
+  width: 4px;
+  background: #ffcb08;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header .column ul li:hover > ul {
+  display: block;
+}
+
+.header .column ul li a:hover {
+  color: #ffcb08;
+}
+
+.header .column ul li a:hover::before {
+  height: 100%;
+}
+
+.header .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*# sourceMappingURL=megamenu.css.map */
